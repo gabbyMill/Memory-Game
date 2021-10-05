@@ -23,3 +23,31 @@ img {
     display: flex;
     justify-content: center;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+    #container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 95vh;
+        background-color: grey;
+       }
+       img {
+           width: 45%;
+           height: 32%;
+       }
+       .finish-animation {
+           display: flex;
+           margin: 0 auto;
+           height: 100vh;
+           width: 100vh;
+       } 
+       .well-done {
+           display: flex;
+           justify-content: center;
+       }
+       
+  }

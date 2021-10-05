@@ -1,6 +1,8 @@
 # The Memory Game
 ![Example](./example.png)
 
+## Start playing [Here]https://gabbymill.github.io/Memory-Game/
+
 ##### Welcome to The Memory Game
 
 ### Instructions:
