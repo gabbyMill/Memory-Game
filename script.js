@@ -1,8 +1,7 @@
 // GLOBALS:
 const container = document.querySelector('#container')
 let clickedCards = [];
-let revealedCards = 0;
-
+let revealedPairs = 0;
 
 const arrayOfCards = [
     {
@@ -61,8 +60,23 @@ function flipOver (e) {
 
 function checkIfSame (cardNumber) {
     if (clickedCards[0] === clickedCards[1]) {
+        revealedPairs++
         updateClassName(cardNumber)
         alert ("Found a match!")
+        if (revealedPairs === arrayOfCards.length - 1) {
+            alert("Well Done!")
+            const wellDone = document.createElement('h1')
+            wellDone.setAttribute('class', 'well-done')
+            wellDone.textContent = 'Well Done!'
+            document.body.append(wellDone)
+            
+            const finishAnimation = document.createElement('img')
+            finishAnimation.setAttribute('src', './finished.gif')
+            finishAnimation.setAttribute('class', 'finish-animation')
+            document.body.setAttribute('style', 'background-color: aquamarine;')
+            document.body.append(finishAnimation)
+            document.body.removeChild(document.querySelector('#container'))
+        }
         return clickedCards = []
     } else {
         alert ("Try agian")

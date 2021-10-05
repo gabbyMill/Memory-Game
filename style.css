@@ -1,9 +1,25 @@
+body {
+    background-color: grey;
+}
+
 #container {
  display: flex;
+ justify-content: center;
  flex-wrap: wrap;
- width: 1200px;   
+ height: 50vh;   
+ background-color: grey;
 }
 img {
     width: 200px;
     height: 200px;
+}
+.finish-animation {
+    display: flex;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vh;
+} 
+.well-done {
+    display: flex;
+    justify-content: center;
 }
